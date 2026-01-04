@@ -60,19 +60,19 @@ Before proceeding with the analysis and visualization, data is reshaped into piv
 
 The exploratory data analysis (EDA) focuses on identifying key trends and patterns in energy consumption across the EU. Key analyses include:
 
-- EU-level aggregated consumption trends by fuel type from 1990 to 2023.
+1. EU-level aggregated consumption trends by fuel type from 1990 to 2023.
 
-  - Bar charts for each fuel type showing total consumption per year (KTOE)
-  - Line charts comparing consumption trends across fuel types (KTOE)
-  - Percentage share of each fuel type in total EU energy consumption over time (% share)
-  
-- Geospatial visualisations of energy consumption by country and fuel type from 2018 to 2023.
+   - Bar charts for each fuel type showing total consumption per year (KTOE)
+   - Line charts comparing consumption trends across fuel types (KTOE)
+   - Percentage share of each fuel type in total EU energy consumption over time (% share)
 
-- Country-level comparative analyses.
+2. Geospatial visualisations of energy consumption by country and fuel type from 2015 to 2023.
+3. Country-level comparative analyses.
 
-  - heatmaps showing consumption levels by country and year for the top 10 consuming countries per fuel type (1990-2023)
-  - stacked percentage bar charts showing national energy mixes for 2023.
-- Energy consumption by fuel type in Ireland.
+   - heatmaps showing consumption levels by country and year for the top 10 consuming countries per fuel type (1990-2023)
+   - stacked percentage bar charts showing national energy mixes for 2023.  
+
+4. Energy consumption by fuel type in Ireland.
 
 ## Requirements
 The project requires the following Python libraries:
@@ -84,7 +84,8 @@ The project requires the following Python libraries:
 
 These can be installed via pip using the provided `requirements.txt` file:
 
-```pip install -r requirements.txt
+``` 
+pip install -r requirements.txt
 ```
 
 ### End
