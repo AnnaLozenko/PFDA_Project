@@ -1,13 +1,13 @@
-# Europe Energy Consumption Analysis (1990-2023)
+# European Energy Consumption Analysis (1990-2023)
 
 ## Project Overview
 
 This project analyses long-term energy consumption trends across European countries between 1990 and 2023, focusing on four major fuel categories:
 
-- Oil & Petroleum Products
-- Solid Fossil Fuels
-- Natural Gas 
-- Renewable Energy Sources
+- **Oil & Petroleum Products**: include crude oil and petroleum derivatives such as gasoline, diesel, kerosene, fuel oil, heating oil, bitumen and other oil-based products. Crude oil is a naturally occurring liquid fossil fuel extracted from underground reservoirs and refined into various petroleum products for transportation, heating, and industrial use.
+- **Solid Fossil Fuels**: include coal (hard coal, lignite), peat, and coke. These are carbon-rich energy sources formed from ancient plant material over millions of years, primarily used for electricity generation and industrial processes.
+- **Natural Gas**: a fossil fuel composed mainly of methane, used for heating, electricity generation, and as an industrial feedstock. It is not solid like coal or liquid like oil, but exists in a gaseous state at room temperature and pressure. 
+- **Renewable Energy Sources**: non-fossil energy sources that are naturally replenished, including wind, hydro, solar, geothermal, biomass, and biogases. These sources have a much lower environmental impact compared to fossil fuels and are key to the energy transition towards sustainability.
 
 Using official Eurostat energy balance data, the project examines how energy consumption patterns have evolved at both EU level and country level, with particular attention to:
 - the decline in fossil fuel usage
@@ -62,27 +62,13 @@ The exploratory data analysis (EDA) investigates long-term trends, structural sh
 
 Key analyses include:
 
-1. **EU-level aggregated consumption trends by fuel type (1990-2023)**
+1. EU-level aggregated consumption trends by fuel type (1990-2023)
 
-    - Solid fossil fuels declined by ~69%, oil and petroleum by ~24%, natural gas by ~19%, while renewables surged ~171%, reflecting the EU’s transition toward cleaner energy. 
-    - Percentage share plots show solid fossil fuels dropping 20 percentage points and renewables increasing by a similar margin. 
-    - Line and bar charts highlight structural shifts, with natural gas serving as a transitional fuel.
+2. Geospatial visualisations of energy consumption by country and fuel type (2015-2023)
 
-2. **Geospatial visualisations of energy consumption by country and fuel type (2015-2023)**
+3. Country-level comparative analyses
 
-   - Maps reveal regional differences: Nordic countries lead in renewables, Western and Southern Europe show mixed adoption, and Central/Eastern Europe rely more on solid fossil fuels. 
-   - Germany shows high consumption across all four fuel types.
-
-
-3. **Country-level comparative analyses**
-
-   - **Heatmaps** show annual consumption by country for the top 10 consuming nations per fuel type (1990–2023), revealing how large economies like Germany, France, Italy, and Spain dominate across multiple fuels, while other countries are specialized in certain fuel types.
-   - **Stacked percentage bar charts** illustrate national energy mixes in 2023, highlighting structural differences. For instance, Malta, Cyprus, and Luxembourg rely heavily on oil, while Serbia, Kosovo, Czechia, and Bosnia and Herzegovina still consume significant solid fossil fuels. Sweden, Finland, and Iceland stand out for high renewable shares.  
-
-
-4. **Energy consumption by fuel type in Ireland (1990 - 2023)**
-
-   - Oil and petroleum rose ~54%, solid fossil fuels fell ~77%, natural gas increased ~102%, and renewables grew ~700%.
+4. Energy consumption by fuel type in Ireland (1990 - 2023)
 
 
 
@@ -90,13 +76,15 @@ Key analyses include:
 
 **EU-Level Trends**
 
-- Solid fossil fuels declined ~69%, oil & petroleum ~24%, natural gas ~19%, while renewables grew ~171%, reflecting a clear shift toward cleaner energy
+- Solid fossil fuels declined ~69%, oil & petroleum ~24%, natural gas ~19%, while renewables grew ~171%, reflecting a clear shift toward cleaner energy, with natural gas serving as a transitional fuel.
 - Solid fossil fuels’ share dropped 20 percentage points, while renewables rose by a similar margin
 - Regional heterogeneity exists: Nordic countries lead in renewables, Western/Southern Europe show mixed adoption, Central/Eastern Europe retain higher coal reliance
+- Germany shows high consumption across all four fuel types, highlighting its diversified portfolio  
+- Annual consumption by country for the top 10 consuming nations per fuel type (1990–2023), reveal how large economies like Germany, France, Italy, and Spain dominate across multiple fuels, while other countries are specialized in certain fuel types.
+- National energy mixes in 2023 highlight structural differences. For instance, Malta, Cyprus, and Luxembourg rely heavily on oil, while Serbia, Kosovo, Czechia, and Bosnia and Herzegovina still consume significant solid fossil fuels. Sweden, Finland, and Iceland stand out for high renewable shares.  
 
 **Ireland-Specific Trends**
 - Oil & petroleum consumption increased ~54%, solid fossil fuels fell ~77%, natural gas rose ~102%, and renewables grew ~700%
-- Heavy dependence on imports (~85% in 2014) persists, particularly for transport, heating, and power generation, though Corrib gas reduced gas imports since 2015
 
 ### Overall Conclusion
 
@@ -122,6 +110,8 @@ These can be installed via pip using the provided `requirements.txt` file:
 ``` 
 pip install -r requirements.txt
 ```
+This project uses a MySQL database to store and manage cleaned energy consumption data.
+Installation of [MySQL Server](https://www.mysql.com/) and [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) is required to create, inspect, and manage the database used throughout the analysis.
 
 ### End
 
