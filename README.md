@@ -4,10 +4,10 @@
 
 This project analyses long-term energy consumption trends across European countries between 1990 and 2023, focusing on four major fuel categories:
 
-- **Oil & Petroleum Products**: include crude oil and petroleum derivatives such as gasoline, diesel, kerosene, fuel oil, heating oil, bitumen and other oil-based products. Crude oil is a naturally occurring liquid fossil fuel extracted from underground reservoirs and refined into various petroleum products for transportation, heating, and industrial use.
-- **Solid Fossil Fuels**: include coal (hard coal, lignite), peat, and coke. These are carbon-rich energy sources formed from ancient plant material over millions of years, primarily used for electricity generation and industrial processes.
-- **Natural Gas**: a fossil fuel composed mainly of methane, used for heating, electricity generation, and as an industrial feedstock. It is not solid like coal or liquid like oil, but exists in a gaseous state at room temperature and pressure. 
-- **Renewable Energy Sources**: non-fossil energy sources that are naturally replenished, including wind, hydro, solar, geothermal, biomass, and biogases. These sources have a much lower environmental impact compared to fossil fuels and are key to the energy transition towards sustainability.
+- **[Oil & Petroleum Products](https://www.iea.org/world/oil#how-is-oil-used-globally)**: include crude oil and petroleum derivatives such as gasoline, diesel, kerosene, fuel oil, heating oil, bitumen and other oil-based products. Crude oil is a naturally occurring liquid fossil fuel extracted from underground reservoirs and refined into various petroleum products for transportation, heating, and industrial use.
+- **[Solid Fossil Fuels](https://www.iea.org/world/coal)**: include coal (hard coal, lignite), peat, and coke. These are carbon-rich energy sources formed from ancient plant material over millions of years, primarily used for electricity generation and industrial processes.
+- **[Natural Gas](https://www.eia.gov/energyexplained/natural-gas/)**: a fossil fuel composed mainly of methane, used for heating, electricity generation, and as an industrial feedstock. It is not solid like coal or liquid like oil, but exists in a gaseous state at room temperature and pressure. 
+- **[Renewable Energy Sources](https://www.un.org/en/climatechange/what-is-renewable-energy)**: non-fossil energy sources that are naturally replenished, including wind, hydro, solar, geothermal, biomass, and biogases. These sources have a much lower environmental impact compared to fossil fuels and are key to the energy transition towards sustainability.
 
 Using official Eurostat energy balance data, the project examines how energy consumption patterns have evolved at both EU level and country level, with particular attention to:
 - the decline in fossil fuel usage
@@ -34,8 +34,9 @@ All datasets used in this project are publicly available and can be accessed thr
 ## Project Structure
 The project is structured as follows:
 
-- `notebook/`: Jupyter notebook for data cleaning, analysis, and visualisation.
+- `eu_energy_sources_analysis/`: Jupyter notebook for data cleaning, analysis, and visualisation.
 - `README.md`: Project overview and documentation.
+- `plots/`: Folder containing saved plots as PNG files.
 - `requirements.txt`: List of Python dependencies.
 - `.gitignore`
 
@@ -66,7 +67,7 @@ Key analyses include:
 
 2. Geospatial visualisations of energy consumption by country and fuel type (2015-2023)
 
-3. Country-level comparative analyses
+3. Country-level comparative analysis
 
 4. Energy consumption by fuel type in Ireland (1990 - 2023)
 
@@ -85,18 +86,16 @@ Key analyses include:
 
 **Ireland-Specific Trends**
 - Oil & petroleum consumption increased ~54%, solid fossil fuels fell ~77%, natural gas rose ~102%, and renewables grew ~700%
-
+- Ireland follows the EU trend of declining solid fossil fuels and increasing renewables, yet consistently consumes more oil and petroleum than the EU average, with rapidly growing natural gas use and strong renewable expansion.
 ### Overall Conclusion
 
 Europe’s energy system is transitioning toward low-carbon sources, with fossil fuels declining, renewables growing rapidly, and natural gas serving as a bridge fuel.
-The surge in renewable energy consumption highlights the accelerating adoption of low-carbon technologies and the growing impact of European policies such as the 2008 [EU Climate and Energy Package](https://climate.ec.europa.eu/document/download/80f7df0c-2294-4ce9-afeb-1d1885e3063f_en) and the [European Green Deal](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en).
+The surge in renewable energy consumption highlights the accelerating adoption of low-carbon technologies and the growing impact of European policies such as the 2008 [EU Climate and Energy Package](https://climate.ec.europa.eu/document/download/80f7df0c-2294-4ce9-afeb-1d1885e3063f_en) and the [European Green Deal](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en).  
 
+At the national level, Europe’s energy mix remains heterogeneous. Oil and petroleum dominate in Southern and Western Europe, particularly in Malta, Cyprus, and Luxembourg, while solid fossil fuels continue to account for a significant share in parts of Central and Eastern Europe, including Serbia, Kosovo, Czechia, and Bosnia and Herzegovina. Northern European countries, especially Sweden, Finland, and Iceland, lead in renewable adoption, demonstrating advanced progress toward decarbonisation. Natural gas plays a key role in countries like the Netherlands, Italy, and Belgium as a flexible transition fuel.  
 
-At the national level, Ireland has experienced significant shifts in its energy consumption patterns over the past three decades. The country has seen a substantial increase in renewable energy usage, reflecting its commitment to sustainable energy practices. 
-However, Ireland's energy landscape remains complex, with oil and petroleum products still constituting a significant portion of the energy mix, particularly in the transport sector. 
-Ireland continues to rely heavily on [energy imports](https://irelandenergy2050.ie/present/oil-and-gas/?q=how-dependent-on-imports-are-we), with transport, home heating, and power generation sectors still dependent on imported fuels, although the operation of the [Corrib](https://www.rpsgroup.com/projects/corrib-onshore-gas-pipeline/) gas field since 2015 has helped reduce the country’s reliance on imported gas.
-
-
+Ireland has seen major shifts in energy consumption over the past three decades. Renewable energy use has grown by 700%, far above the EU average of 171%, while solid fossil fuels have steadily declined, following the EU trend. However, Ireland continues to consume more oil and petroleum than the EU average, with rapidly rising natural gas use, and remains heavily reliant on [energy imports]((https://irelandenergy2050.ie/present/oil-and-gas/?q=how-dependent-on-imports-are-we))
+ for transport, heating, and power generation. These patterns highlight Ireland’s progress toward a low-carbon system, alongside ongoing challenges in fuel dependence and energy security.
 ## Requirements
 The project requires the following Python libraries:
 - pandas
